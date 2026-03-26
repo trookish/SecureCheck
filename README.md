@@ -14,8 +14,8 @@ This project was developed for the **IT420 Computer Ethics course** at **Al Imam
 
 | Name | Role |
 |------|------|
-| **Fahad AlGhamdi** | Frontend Developer & UI/UX Designer |
-| **Turki AlShaalan** | Project Lead & Backend Developer |
+| **Fahad AlGhamdi** | Project Lead & Backend Developer |
+| **Turki AlShaalan** | Frontend Developer & UI/UX Designer |
 | **Ahmed AlAsmari** | Security Implementation & API Integration |
 | **Mushari Hussainan** | Documentation & Testing Lead |
 
