@@ -12,12 +12,12 @@ This project was developed for the **IT420 Computer Ethics course** at **Al Imam
 
 ## 👥 Team Members
 
-| Name |
-|------|
-| **Turri AlShaalan** |
-| **Fahad AlGhamidi** |
-| **Ahmed AlAsmari** |
-| **Mushari Hussainan** |
+| Name | Role |
+|------|------|
+| **Turri AlShaalan** | Project Lead & Backend Developer |
+| **Fahad AlGhamidi** | Frontend Developer & UI/UX Designer |
+| **Ahmed AlAsmari** | Security Implementation & API Integration |
+| **Mushari Hussainan** | Documentation & Testing Lead |
 
 ---
 
