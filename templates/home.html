@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureCheck - Data Breach Awareness</title>
+    <style>
+        /* WIREFRAME STYLES - Black & White Low-Fidelity */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+        }
+
+        /* WIREFRAME CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 2px solid #000000;
+            background-color: #ffffff;
+        }
+
+        /* WIREFRAME HEADER */
+        header {
+            background-color: #f0f0f0;
+            border-bottom: 2px solid #000000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            background-color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid #000000;
+            background-color: #ffffff;
+            font-size: 14px;
+        }
+
+        /* WIREFRAME CONTENT AREA */
+        main {
+            padding: 40px;
+            border: 2px solid #000000;
+        }
+
+        /* WIREFRAME TYPOGRAPHY */
+        h1 {
+            color: #000000;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #000000;
+            margin: 30px 0 15px;
+            font-size: 20px;
+            border-left: 4px solid #000000;
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #000000;
+        }
+
+        /* WIREFRAME CARDS */
+        .card {
+            border: 2px solid #ff0000;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* WIREFRAME COLOR CODING (Grayscale) */
+        .neutral {
+            border-left: 5px solid #666666;
+            background: #f5f5f5;
+        }
+
+        .warning {
+            border-left: 5px solid #999999;
+            background: #eeeeee;
+        }
+
+        .bad {
+            border-left: 5px solid #000000;
+            background: #f0f0f0;
+        }
+
+        .good {
+            border-left: 5px solid #333333;
+            background: #e8e8e8;
+        }
+
+        /* WIREFRAME FORMS */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px;
+            border: 2px solid #000000;
+            font-size: 16px;
+            background-color: #ffffff;
+        }
+
+        button {
+            background: #ffffff;
+            color: #000000;
+            border: 2px solid #000000;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #f0f0f0;
+        }
+
+        /* WIREFRAME FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #000000;
+            border-top: 2px solid #000000;
+            background: #f0f0f0;
+        }
+
+        /* WIREFRAME LISTS */
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* WIREFRAME LINKS */
+        a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        /* WIREFRAME RESPONSIVE */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 15px;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SecureCheck</div>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">Security Check</a>
+                <a href="#">Ethics Agreement</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Welcome to SecureCheck</h1>
+
+            <div class="card warning">
+                <h3>Mandatory Ethics Check</h3>
+                <p>Before using our tools, you must read and agree to the
+                    <a href="#">Ethical User Agreement</a>.
+                    <strong>Do not</strong> check credentials that do not belong to you.
+                </p>
+            </div>
+
+            <div class="card neutral">
+                <h3>Our Mission</h3>
+                <p>SecureCheck is dedicated to raising awareness about data breaches.
+                    We provide transparency tools to help you secure your digital identity.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                <div class="card">
+                    <h3>Password Check</h3>
+                    <p>Check if your password is compromised using privacy-safe k-anonymity.</p>
+                    <button>Go to Tool</button>
+                </div>
+                <div class="card">
+                    <h3>Email Check</h3>
+                    <p>Scan public breach databases for your email address.</p>
+                    <button>Go to Tool</button>
+                </div>
+            </div>
+
+            <h2>About SecureCheck</h2>
+            <div class="card neutral">
+                <h3>Project Description</h3>
+                <p>Developed for the IT420 Computer Ethics course, this project aims to demonstrate
+                    how security tools can be built ethically. We address the 'Dual-Use' dilemma by
+                    implementing strict technical and policy controls.</p>
+            </div>
+
+            <h2>Technical Methodology</h2>
+            <div class="card good">
+                <h3>k-Anonymity (Privacy Preserving)</h3>
+                <p>We utilize the k-anonymity model for password checking. This means we never
+                    send your full password (or even its full hash) to any server. We only send the
+                    first 5 characters of the hash, ensuring mathematical anonymity.</p>
+            </div>
+        </main>
+
+        <footer>
+            IT420 Computer Ethics Project | Group 5 | 2025<br>
+            Al Imam Mohammad Ibn Saud Islamic University
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureCheck - Data Breach Awareness</title>
+  <style>
+    /* WIREFRAME STYLES - Black & White Low-Fidelity */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      color: #2d3748;
+      padding: 20px;
+    }
+
+    /* WIREFRAME CONTAINER */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      border: 2px solid #cbd5e0;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* WIREFRAME HEADER */
+    header {
+      background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+      border-bottom: 2px solid #2b6cb0;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      border: 2px solid #ffffff;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #2c5282;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #2c5282;
+      text-decoration: none;
+      padding: 10px 15px;
+      border: 2px solid #ffffff;
+      background-color: #ffffff;
+      font-size: 14px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background-color: #edf2f7;
+      color: #1a365d;
+      transform: translateY(-1px);
+    }
+
+    nav a.active {
+      background-color: #4299e1;
+      color: #ffffff;
+    }
+
+    /* WIREFRAME CONTENT AREA */
+    main {
+      padding: 40px;
+      border: 2px solid #e2e8f0;
+      background-color: #ffffff;
+      border-radius: 0 0 6px 6px;
+    }
+
+    /* WIREFRAME TYPOGRAPHY */
+    h1 {
+      color: #2d3748;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #4299e1;
+      padding-bottom: 10px;
+      font-size: 28px;
+    }
+
+    h2 {
+      color: #2d3748;
+      margin: 30px 0 15px;
+      font-size: 20px;
+      border-left: 4px solid #4299e1;
+      padding-left: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #4a5568;
+    }
+
+    /* WIREFRAME CARDS */
+    .card {
+      border: 2px solid #e2e8f0;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f7fafc;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transform: translateY(-1px);
+    }
+
+    /* WIREFRAME COLOR CODING */
+    .neutral {
+      border-left: 5px solid #718096;
+      background: #f7fafc;
+    }
+
+    .warning {
+      border-left: 5px solid #ed8936;
+      background: #fffbf0;
+    }
+
+    .bad {
+      border-left: 5px solid #f56565;
+      background: #fff5f5;
+    }
+
+    .good {
+      border-left: 5px solid #48bb78;
+      background: #f0fff4;
+    }
+
+    /* WIREFRAME FORMS */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border: 2px solid #cbd5e0;
+      font-size: 16px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      transition: border-color 0.2s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus {
+      outline: none;
+      border-color: #4299e1;
+      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+    }
+
+    button {
+      background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+      color: #ffffff;
+      border: 2px solid #2b6cb0;
+      padding: 12px 24px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      width: 100%;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* WIREFRAME FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #4a5568;
+      border-top: 2px solid #e2e8f0;
+      background: #f7fafc;
+      border-radius: 0 0 6px 6px;
+    }
+
+    /* WIREFRAME LISTS */
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      color: #4a5568;
+    }
+
+    /* WIREFRAME LINKS */
+    a {
+      color: #4299e1;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #2c5282;
+      text-decoration: underline;
+    }
+
+    /* WIREFRAME RESPONSIVE */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🛡️ SecureCheck</div>
+      <nav>
+        <a href="/" class="{{ 'active' if page == 'home' }}">Home</a>
+        <a href="/security" class="{{ 'active' if page == 'security' }}">Security Check</a>
+        <a href="/ethics" class="{{ 'active' if page == 'ethics' }}">Ethics Agreement</a>
+      </nav>
+    </header>
+
+    <main>
+      {{ content|safe }}
+    </main>
+
+    <footer>
+      IT420 Computer Ethics Project | Group 5 | 2025<br>
+      Al Imam Mohammad Ibn Saud Islamic University
+    </footer>
+  </div>
+</body>
+
+</html>
