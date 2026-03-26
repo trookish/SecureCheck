@@ -2,23 +2,6 @@
 
 **IT420 Computer Ethics Project - Group 5**
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Team Members](#team-members)
-- [Features](#features)
-- [Technical Stack](#technical-stack)
-- [How It Works](#how-it-works)
-- [Privacy & Security](#privacy--security)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Ethical Considerations](#ethical-considerations)
-- [License](#license)
-
----
-
 ## 🎯 Overview
 
 SecureCheck is a web-based platform designed to help users check if their passwords and email addresses have been compromised in data breaches. The application demonstrates how security tools can be built ethically while addressing the "Dual-Use" dilemma through strict technical and policy controls.
